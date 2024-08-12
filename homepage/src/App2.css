@@ -1,0 +1,49 @@
+/* src/App.css */
+
+/* Styling the Timer component */
+.timer-container {
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .timer-display {
+    font-size: 3em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .timer-buttons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .timer-button {
+    background-color: black;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    margin: 0 10px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .timer-button:hover {
+    background-color: black;
+  }
+  
+  .timer-button:active {
+    background-color: #004494;
+  }
+  
+  .timer-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
