@@ -52,7 +52,7 @@ function App() {
          {viewPass==false ? <span onClick={()=>setviewPass(true)} className="material-symbols-outlined">
           visibility
             </span> : <span onClick={()=>setviewPass(false)} className="material-symbols-outlined">
-            visibility_off
+            visibility_off 
             </span>} <br /><br />
          <input type="submit" />
       </form>
