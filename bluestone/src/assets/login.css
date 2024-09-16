@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+}
+form{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+span{
+    font-weight: 500;
+    color: #646cff;
+  }
+  span:hover {
+    color: #535bf2;
+  }
+  input{
+    width: 40%;
+    text-transform: capitalize;
+    padding-left: 10px;
+    border: 1px solid grey;
+    height: 35px;
+    font-size: 18px;
+    /* border-radius: 25px; */
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-top: 15px;
+  }
+  #box{
+    width: 4%;
+    height: 25px;
+  }
+  #btn{
+    width: 40%;
+    background-color: rgb(240, 76, 76);
+    border: none;
+    letter-spacing: 2px;
+    /* font-weight: bold; */
+    color: white;
+    height: 45px;
+  }
+  #btn:hover{
+    font-weight: bold;
+    color:rgb(240, 76, 76);
+    background-color: white;
+    border: 2px solid rgb(240, 76, 76);
+  }
+  #btn1{
+    width: 25%;
+    background-color: rgb(240, 76, 76);
+    border: none;
+    letter-spacing: 3px;
+    /* font-weight: bold; */
+    color: white;
+    height: 50px;
+  }
+  #btn1:hover{
+    font-weight: bold;
+    color:rgb(240, 76, 76);
+    background-color: white;
+    border: 2px solid rgb(240, 76, 76);
+  }
+  
+  h4{
+    font-weight: normal;
+    font-size: 15px;
+    color: grey;
+    /* font-family: 'Times New Roman', Times, serif; */
+  }
+  h1 {
+    font-weight: normal;
+    font-size: 24px;
+    letter-spacing: 1.5px;
+  }
