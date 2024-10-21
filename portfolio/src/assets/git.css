@@ -1,0 +1,165 @@
+.testimonial__container {
+    width: 1000px;
+    margin: 5%;
+    /* border: 1px solid white; */
+  }
+  .git{
+    padding-left: 50%;
+  }
+  .testimonial__item {
+    text-align: center;
+    padding: 0 1.25rem 1.25rem;
+  }
+  .imgs{
+    padding: 5%;
+  }
+  .thumb {
+    height: 100%;
+    width: 90%;
+    /* border: 1px solid white; */
+    margin: 9% 5%;
+  }
+  
+  .testimonial__title {
+    margin-top: 0.75rem;
+  }
+  
+  .subtitle {
+    color: #8b88b1;
+    font: var(--small-font-size);
+  }
+  
+  .comment {
+    background-color: var(--container-color);
+    padding: 1.875rem;
+    margin-top: 1.5rem;
+    box-shadow: var(--shadow);
+    border-radius: var(--border-radius);
+    position: relative;
+    margin-bottom: 3rem;
+  }
+  
+  .comment::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid var(--container-color);
+    position: absolute;
+    left: 49.5%;
+    top: -0.625rem;
+    transform: translateX(-7.5px);
+  }
+  
+  .swiper-pagination-bullet {
+    width: 0.5rem !important;
+    height: 0.375rem !important;
+    background-color: var(--first-color) !important;
+    opacity: 1 !important;
+  }
+  
+  .swiper-pagination-horizontal.swiper-pagination-bullets
+    .swiper-pagination-bullet {
+    margin: 0 0.2rem !important;
+  }
+  
+  .swiper-pagination-bullet-active {
+    width: 1.2rem !important;
+    height: 0.375rem !important;
+    border-radius: 0.5rem !important;
+  }
+  
+  
+  
+  .testimonials {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* General styling for the Swiper container and items */
+  .testimonial__container {
+    width: 100%;
+  }
+  
+  .testimonial__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .imgs {
+    max-width: 100%;
+    height: auto;
+    /* margin-top: 8%; */
+  }
+  .imgs1 {
+    max-width: 100%;
+    height: auto;
+    margin-top: 8%;
+  }
+  
+  /* Responsive styles for 430px screen width (small mobile phones) */
+  @media (max-width: 400px) {
+    .testimonials {
+      padding: 5px;
+    }
+  
+    .testimonial__item {
+      padding: 5px;
+    }
+  
+    .imgs {
+      width: 70%;
+      padding: 0 5px;
+    }
+  
+    .thumb {
+      height: 80%;
+      width: 80%;
+      margin: 6% 11%;
+    }
+  }
+  
+  /* Responsive styles for smaller screens (mobile phones) */
+  @media (max-width: 767px) {
+    .testimonials {
+      padding: 10px;
+    }
+  
+    .testimonial__item {
+      padding: 10px;
+    }
+  
+    .imgs {
+      width: 90%;
+    }
+  }
+  
+  /* Responsive styles for larger screens (laptops and desktops) */
+  @media (min-width: 768px) {
+    .testimonials {
+      padding: 20px 40px;
+    }
+  
+    .testimonial__item {
+      padding: 20px;
+    }
+  
+    .imgs {
+      width: 70%;
+    }
+  }
+  
+  /* For even larger screens, adding extra padding for better aesthetics */
+  @media (min-width: 1200px) {
+    .testimonials {
+      padding: 20px 80px;
+    }
+  
+    .imgs {
+      width:60%
+    }
+  }
