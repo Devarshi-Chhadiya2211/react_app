@@ -4,6 +4,7 @@ import { getData } from '../ReduxFolder/product/action';
 import { useNavigate, useParams } from 'react-router-dom';
 import { doc, getDoc, getDocs, updateDoc } from 'firebase/firestore';
 import { db } from '../Firebase/Firebase';
+import '../assets/login.css' 
 
 function SingleEditProduct() {
     const [state,setState] = useState({
@@ -36,15 +37,46 @@ function SingleEditProduct() {
         navigate("/allpro")
     }
   return (
-    <div>
-        <form onSubmit={handleSubmit}>
-             <input value={state.title} type="text" name='title'  placeholder='Title'  onChange={handleChange}/>
-             <input value={state.cat} type="text" name='cat'  placeholder='Category' onChange={handleChange}/>
-             <input type="text" name='price' value={state.price}  placeholder='Price'  onChange={handleChange}/>
-             <input type="text" name='img' value={state.img} placeholder='ImageUrl' onChange={handleChange} />
-             <input type="submit" />
-        </form>
+    <>
+       <div class="wrapper">
+    <div class="title-text">
+        <div class="title login">Edit Product</div>
+        <div class="title signup">Add Product</div>
     </div>
+        <div class="form-inner">
+            <form class="login" onSubmit={handleSubmit}>
+                <div class="field">
+                <input value={state.title} type="text" name='title'  placeholder='Title'  onChange={handleChange}/>
+                </div>
+
+                <div class="field">
+                <input value={state.cat} type="text" name='cat'  placeholder='Category' onChange={handleChange}/>
+                </div>
+   
+                <div class="field">
+                <input type="text" name='price' value={state.price}  placeholder='Price'  onChange={handleChange}/>
+                </div>
+                
+                <div class="field">
+                    {/* <img src="" alt="" name='img' value={state.img} placeholder='ImageUrl' onChange={handleChange} /> */}
+                <input type="text" name='img' value={state.img} placeholder='ImageUrl' onChange={handleChange} />
+                </div>
+   
+                <div class="field">
+                    <input type="submit" value="Update"/>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    </>
+    // <div>
+    //     <form onSubmit={handleSubmit}>
+    //          <input value={state.title} type="text" name='title'  placeholder='Title'  onChange={handleChange}/>
+    //          <input value={state.cat} type="text" name='cat'  placeholder='Category' onChange={handleChange}/>
+    //          <button type='submit'>Update</button>
+    //     </form>
+    // </div>
   )
 }
 

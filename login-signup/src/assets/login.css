@@ -6,7 +6,23 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
+.card{
+    width: 100%;
+}
+.edit{
+    background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+    width:70px;
+    height: 30px;
+    border: none;
+    color: white;
+}
+.del{
+    background: -webkit-linear-gradient(right, #a445b2, #fa4299);
+    width:70px;
+    height: 30px;
+    border: none;
+    color: white;
+}
 html, body{
     display: grid;
     height: 100%;

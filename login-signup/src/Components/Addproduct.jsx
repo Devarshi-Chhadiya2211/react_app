@@ -48,11 +48,12 @@ function Addproduct() {
                 </div>
    
                 <div class="field">
-                <input type="text" placeholder='imgURL' value={price} name='price' onChange={(e)=>setPrice(e.target.value)}/><br /><br />
+                    {/* <img src="" alt="" /> */}
+                <input type="text" placeholder='price' value={price} name='price' onChange={(e)=>setPrice(e.target.value)}/><br /><br />
                 </div>
                 
                 <div class="field">
-                <input type="text" placeholder='price' value={img} name='img' onChange={(e)=>setImage(e.target.value)}/><br /><br />
+                <input type="text" placeholder='imgURL' value={img} name='img' onChange={(e)=>setImage(e.target.value)}/><br /><br />
                 </div>
    
                 <div class="field">
